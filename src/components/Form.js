@@ -193,7 +193,6 @@ const validate = values => {
                 childArrayErrors[childIndex] = childErrors
             }
             if (!child || (child && !child.birth) || (child.birth && !isValidDate(child.birth))) {
-                console.log(child.birth);
                 childErrors.birth = 'Required'
                 childArrayErrors[childIndex] = childErrors
             }
