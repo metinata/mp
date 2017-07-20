@@ -1,0 +1,35 @@
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+.clear{
+  clear:both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+  background: #97c3be url('../../img/cloud.png') no-repeat center 20px;
+  background-size: contain;
+  font: {
+    family: Arial;
+  }
+}
+
+.logo{
+  display: block;
+  width: 145px;
+  height: 56px;
+  background: transparent url('../../img/logo.png') no-repeat 0 0;
+  @include vertical-center();
+}
+
+.root{
+  min-height: 100%;
+}

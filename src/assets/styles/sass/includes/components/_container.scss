@@ -1,0 +1,11 @@
+.container{
+    width: 970px;
+    padding: 56px 0;
+    position: relative;
+    @include vertical-center();
+    .social-wrap{
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+}

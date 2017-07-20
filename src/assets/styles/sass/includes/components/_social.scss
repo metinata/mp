@@ -1,0 +1,43 @@
+.social-wrap{
+    width: 137px;
+    height: 39px;
+    .social{
+        float: left;
+        display: block;
+        width: 39px;
+        height: 39px;
+        background-color: #343032;
+        color: #fff;
+        margin: 0 0 0 10px;
+        @include border-radius(100%);
+        &:first-child{
+            margin-left: 0;
+        }
+        &:before{
+            display: block;
+            text-align: center;
+            height: 39px;
+            padding: 5px 0 4px;
+            line-height: 30px;
+            font: {
+                family: 'FontAwesome';
+                size: 22px;
+            }
+        }
+        &.facebook{
+            &:before{
+                content: '\f09a';
+            }
+        }
+        &.twitter{
+            &:before{
+                content: '\f099';
+            }
+        }
+        &.instagram{
+            &:before{
+                content: '\f16d';
+            }
+        }
+    }
+}
